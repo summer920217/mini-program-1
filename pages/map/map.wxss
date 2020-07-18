@@ -1,0 +1,31 @@
+.tools{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items{ 
+  width: 200rpx;
+  margin: calc((100% - 600rpx)/6);
+}
+
+.items image{
+  width: 100%;
+  height: 200rpx;
+}
+
+.items text{
+  display: block;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width:768px){
+  .items{
+    width: 20%;
+    height: 160rpx;
+    margin:calc(20% / 8);
+  }
+  .items image{
+    height: 160rpx;
+  } 
+}

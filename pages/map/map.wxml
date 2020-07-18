@@ -1,0 +1,8 @@
+<view class="tools">
+  <view wx:for="{{tools}}" class="items" bindtap="choose" id="{{item.id}}">
+    
+    <image src="../imgs/{{item.img}}"></image>
+    <text>{{item.key}}</text>
+  </view>
+</view>
+

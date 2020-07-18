@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/novel/novel",
+    "pages/index/index",
+    "pages/map/map",
+    "pages/video/video",
+    "pages/music/music",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "logo.png",
+        "selectedIconPath": "logo.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "功能",
+        "iconPath": "map.png",
+        "selectedIconPath": "map.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

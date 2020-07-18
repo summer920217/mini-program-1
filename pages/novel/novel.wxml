@@ -1,0 +1,13 @@
+<view>
+  <view class="item" wx:for="{{top}}">
+    <view class="pic">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="text">
+      <text class="title">{{item.bookName}}</text>
+      <text class="intro">
+      {{item.intro}}
+      </text>
+    </view>
+  </view>
+</view>

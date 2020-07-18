@@ -1,0 +1,11 @@
+/* pages/video/video.wxss */
+.video{
+  margin: 20rpx 10rpx;
+}
+video{
+  width: 100%;
+}
+text{
+  font-size: 20px;
+  font-weight: bold;
+}

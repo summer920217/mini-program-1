@@ -1,0 +1,8 @@
+<view>
+  <text>音乐Music</text>
+  <view>
+    <button type="primary" bindtap="pause">暂停</button>
+    <button type="primary" bindtap="play">播放</button>
+    <button type="primary" bindtap="stop">停止</button>
+  </view>
+</view>
