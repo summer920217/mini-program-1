@@ -119,6 +119,8 @@ Page({
     })
   },
   getPic(){
-
+    wx.navigateTo({
+      url: '../pic/pic'
+    })
   }
 })

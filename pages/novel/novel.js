@@ -72,6 +72,15 @@ Page({
   onShareAppMessage: function () {
 
   },
+
+  choose: function(e){
+    console.log(e)
+    let href = e.currentTarget.dataset.href;
+    let bookName = e.currentTarget.dataset.bookname
+    wx.navigateTo({
+      url: `novelDetail?href=${href}&bookName=${bookName}`,
+    })
+  },
   /**
    * 格式化数据
    * @param {string} html 
@@ -83,7 +92,7 @@ Page({
     // console.log(pics)
     let arrPics = pics.split("<li>")
     let arrContents = contents.split("</li>");
-    console.log(arrContents)
+    // console.log(arrContents)
     // console.log(arrPics)
     let top = []
     for(let i=1;i<5;i++){

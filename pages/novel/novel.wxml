@@ -1,5 +1,5 @@
 <view>
-  <view class="item" wx:for="{{top}}">
+  <view class="item" wx:for="{{top}}" bindtap="choose" data-href="{{item.href}}" data-bookname="{{item.bookName}}">
     <view class="pic">
       <image src="{{item.img}}"></image>
     </view>
