@@ -12,12 +12,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let href = "https://www.bookben.net" + options.href;
+    let u = options.href;
+    let href = u.substring(4,u.indexOf("."))
+    href = "https://www.bookben.net/read" + href;
     // console.log(options)
     wx.setNavigationBarTitle({
       title: options.bookName
     })
-    // console.log(href)
+    console.log(href)
     wx.request({
       url: href,
       success: res=>{
@@ -77,7 +79,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-
+/**
+ * 
+ * @param {String} html 
+ */
   formatHtml: function(html){
     
   }

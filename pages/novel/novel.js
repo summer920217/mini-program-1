@@ -1,5 +1,5 @@
 // pages/novel/novel.js
-const util = require("../../utils/util.js")
+
 Page({
 
   /**
