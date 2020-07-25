@@ -19,7 +19,7 @@ Page({
     wx.setNavigationBarTitle({
       title: options.bookName
     })
-    // console.log(href)
+    console.log(href)
     wx.request({
       url: href,
       success: res=>{
@@ -79,7 +79,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-
+/**
+ * 
+ * @param {String} html 
+ */
   formatHtml: function(html){
     console.log(html)
   }
