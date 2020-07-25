@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/novel/novel",
     "pages/index/index",
     "pages/map/map",
     "pages/video/video",
     "pages/music/music",
-    "pages/novel/novel",
     "pages/novel/novelDetail",
     "pages/pic/pic",
     "pages/logs/logs"

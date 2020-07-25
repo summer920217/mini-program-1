@@ -12,7 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let href = "https://www.bookben.net" + options.href;
+    let href = options.href;
+    href = href.substring(4,href.indexOf('.'))
+    href = "https://www.bookben.net/read" + href;
     // console.log(options)
     wx.setNavigationBarTitle({
       title: options.bookName
@@ -79,7 +81,7 @@ Page({
   },
 
   formatHtml: function(html){
-    
+    console.log(html)
   }
 
 })
