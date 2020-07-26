@@ -1,11 +1,14 @@
 // pages/novel/novelDetail.js
+
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    chapters:[]
   },
 
   /**
@@ -17,7 +20,7 @@ Page({
     href = "https://www.bookben.net/read" + href;
     // console.log(options)
     wx.setNavigationBarTitle({
-      title: options.bookName
+      title: app.globalData.bookName
     })
     console.log(href)
     wx.request({
@@ -84,7 +87,34 @@ Page({
  * @param {String} html 
  */
   formatHtml: function(html){
-    console.log(html)
+    // console.log(html)
+    let start = html.indexOf('<div class="info_views">');
+    let end = html.indexOf('</div>',start+1);
+    html = html.substring(start, end)
+    // console.log(html);
+    let arr = html.split('</a>')
+    // console.log(arr);
+    let chapters = [];
+    for(let i=0;i<arr.length-1;i++){
+      let a = arr[i]
+      let url = a.substring(a.indexOf('https'),a.indexOf('html'))+'html';
+      let title = a.substring(a.indexOf('target="_blank"'));
+      title = title.substring(title.indexOf('>')+1,title.indexOf('['));
+      chapters.push({
+        url,title
+      })
+    }
+    // console.log(chapters)
+    this.setData({
+      chapters:chapters
+    })
+  },
+
+  choose: function(e){
+    let url = e.currentTarget.dataset.href;
+    wx.navigateTo({
+      url: `novelContent?href=${url}`,
+    })
   }
 
 })

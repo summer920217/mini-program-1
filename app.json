@@ -6,6 +6,7 @@
     "pages/video/video",
     "pages/music/music",
     "pages/novel/novelDetail",
+    "pages/novel/novelContent",
     "pages/pic/pic",
     "pages/logs/logs"
   ],

@@ -1,5 +1,7 @@
 // pages/novel/novel.js
 
+const app = getApp();
+
 Page({
 
   /**
@@ -74,12 +76,14 @@ Page({
   },
 
   choose: function(e){
-    console.log(e)
+    // console.log(e)
     let href = e.currentTarget.dataset.href;
-    let bookName = e.currentTarget.dataset.bookname
+    let bookName = e.currentTarget.dataset.bookname;
+    app.globalData.bookName = bookName;
     wx.navigateTo({
-      url: `novelDetail?href=${href}&bookName=${bookName}`,
+      url: `novelDetail?href=${href}`,
     })
+
   },
   /**
    * 格式化数据

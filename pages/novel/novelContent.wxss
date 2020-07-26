@@ -1,0 +1,4 @@
+/* pages/novel/novelContent.wxss */
+.nav{
+  text-align: center;
+}

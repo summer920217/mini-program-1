@@ -1,1 +1,5 @@
-
+<view>
+  <text bindtap="choose" wx:for="{{chapters}}" data-href="{{item.url}}">
+    {{ item.title }}
+  </text>
+</view>
