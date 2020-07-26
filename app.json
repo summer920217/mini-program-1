@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/novel/novel",
     "pages/index/index",
+    "pages/novel/novel",
     "pages/map/map",
     "pages/video/video",
     "pages/music/music",
