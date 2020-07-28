@@ -4,10 +4,13 @@
       <image src="{{item.img}}"></image>
     </view>
     <view class="text">
-      <text class="title">{{item.bookName}}</text>
-      <text class="intro">
+      <view class="title">
+        <text>{{item.bookName}}</text>
+        <text class="time">最新更新时间</text>
+      </view>
+      <view class="intro">
       {{item.intro}}
-      </text>
+      </view>
     </view>
   </view>
 </view>

@@ -24,10 +24,17 @@ image{
 .title{
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 2rem;
-  margin-right: 10rpx;
-  display: block;
+  line-height: 2.5rem;
+  /* margin-right: 10rpx; */
+  /* display: block; */
+  /* background-color: pink; */
 }
+.time{
+  float: right;
+  font-size: 0.85em;
+  font-weight: normal;
+  color: #999;
+} 
 .author{
   color:#999;
   font-size: 1rem;
@@ -35,6 +42,7 @@ image{
 .intro{
   font-size: 0.8rem;
 }
+
 
 
 @media screen and (max-width: 320px){
@@ -52,12 +60,20 @@ image{
 
     padding:10rpx;
     flex-wrap: wrap;
+    height: auto;
   }
   .pic{
     width: 100%;
   }
   .text{
-    padding: 0;
+    padding: 0; 
+    height: 6.2rem;
+  }
+  .text .intro{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
  
   

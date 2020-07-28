@@ -1,1 +1,11 @@
 /* pages/novel/novelDetail.wxss */
+view.detail{
+  text-indent: 2em;
+  padding-left: 2em;
+
+}
+view.detail text{
+  background: rgb(128, 229, 213);
+}
+
+

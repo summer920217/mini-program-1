@@ -1,4 +1,21 @@
 /* pages/novel/novelContent.wxss */
+
 .nav{
   text-align: center;
+  position: fixed;
+  width: 100%;
+  background: rgb(28, 207, 177);
+  color: #fff;
+  line-height: 1.8em;
+}
+.nav .links text{
+  margin: 0 9rpx;
+  font-size: 0.9em;
+  text-decoration: underline;
+  
+}
+
+.content{
+  padding-top: 3em;
+  padding:3em 0.43em 1em;
 }
